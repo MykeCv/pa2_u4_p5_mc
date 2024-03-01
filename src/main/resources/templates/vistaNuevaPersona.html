@@ -10,7 +10,7 @@
 
 <body>
     <form th:action="@{/personas/guardar}" th:object="${persona}" th:method="POST">
-        <table>
+        <table class="table table-striped">
             <tr>
                 <td><label>Nombre:</label></td>
                 <td><input type="text" id="persona.nombre" th:field="${persona.nombre}"></td>
