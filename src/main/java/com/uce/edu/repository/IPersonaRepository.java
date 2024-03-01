@@ -15,4 +15,6 @@ public interface IPersonaRepository {
 	public List<Persona> selecTodo();
 
 	public void eliminar(String cedula);
+
+	public Persona select(Integer id);
 }

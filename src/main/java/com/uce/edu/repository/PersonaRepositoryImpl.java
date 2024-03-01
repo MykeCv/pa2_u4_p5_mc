@@ -46,4 +46,9 @@ public class PersonaRepositoryImpl implements IPersonaRepository {
 		return query.getResultList();
 	}
 
+	@Override
+	public Persona select(Integer id) {
+		return this.entityManager.find(Persona.class, id);
+	}
+
 }
